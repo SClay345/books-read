@@ -5,28 +5,37 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
-  color: rgb(3, 59, 15);
-  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+  color: rgb(255, 244, 244);
+  font-family: 'Oswald', sans-serif;
+ 
 }
 body{
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,71,253,1) 50%, rgba(0,0,0,1) 100%); 
 }
 div {
-  background-image: url(../shunya-koide-1emWndlDHs0-unsplash.jpg);
+  background-image: url(../john-mark-smith-F_cHIM0Kcy4-unsplash.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content:flex-start;
   flex-wrap: wrap;
-  margin: 0 14%;
+  margin: 0 4%;
   height: 100vh;
 background-repeat: no-repeat;
+background-position: center;
+overflow: hidden;
 }
-
-div h1{
+h1 {
+  font-size: 3em;
+}
+div h1, p{
   flex-basis: 100%;
   text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+button {
+  color: black;
 }
 
 /******************************************
@@ -35,9 +44,23 @@ div h1{
 img{
   display: block;
   margin: 0 auto;
+  width: 25%
 }
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media (max-width: 480px) {
+ 
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  div{
+    background-position: center bottom;
+     }
+}
+@media (min-width: 1025px) {
+  div{
+ background-position: center bottom;
+  }
+}
