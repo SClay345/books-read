@@ -7,12 +7,17 @@
   box-sizing: border-box;
   color: rgb(255, 244, 244);
   font-family: 'Oswald', sans-serif;
+  
  
 }
+
 body{
   background: rgb(0,0,0);
   background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(29,71,253,1) 50%, rgba(0,0,0,1) 100%); 
+  
+  
 }
+
 div {
   background-image: url(../john-mark-smith-F_cHIM0Kcy4-unsplash.jpg);
   background-size: cover;
@@ -22,19 +27,29 @@ div {
   flex-wrap: wrap;
   margin: 0 4%;
   height: 100vh;
-background-repeat: no-repeat;
-background-position: center;
-overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
 }
 h1 {
   font-size: 3em;
 }
-div h1, p{
+div h1, p, h3{
   flex-basis: 100%;
   text-align: center;
   text-shadow: 2px 2px #000000;
 }
-button {
+.break{
+  flex-basis: 100%;
+  height: 0;
+}
+.books{
+  position: relative;
+  overflow-y: scroll;
+  width: 1000px;
+  height: 60%;
+}
+input, button {
   color: black;
 }
 
@@ -46,13 +61,17 @@ img{
   margin: 0 auto;
   width: 25%
 }
-
+h3 {
+  font-size: 4em;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 @media (max-width: 480px) {
- 
+  .pages{
+    margin-top: 1px;
+  }
 }
 @media (min-width: 481px) and (max-width: 1024px) {
   div{
